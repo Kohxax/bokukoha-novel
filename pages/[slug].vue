@@ -1,13 +1,13 @@
 <script setup>
-const route = useRoute()
-const { data: post } = await useAsyncData(`content-${route.params.slug}`, () => {
-  return queryCollection('content').path(`/${route.params.slug}`).first()
+const slug = useRoute().params.slug
+const { data: post } = await useAsyncData(`content-${slug}`, () => {
+  return queryCollection('content').path(`/${slug}`).first()
 })
 </script>
 
 <template>
   <div class="min-h-screen bg-gray-30 font-custom flex justify-center">
-    <article class="prose dark:prose-invert prose-a-text-blue-500 min-w-3xl mt-7">
+    <article class="px-3 py-3 prose dark:prose-invert prose-a-text-blue-500 w-full max-w-3xl mt-7">
       <div class="px-3 py-3 bg-gray-42 shadow-xl rounded-2xl">
         <h2 class="mt-3">{{ post.title }}</h2>
         <p>{{ post.description }}</p>
