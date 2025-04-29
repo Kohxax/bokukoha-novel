@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@theme {
+    --color-gray-30: #303030;
+    --color-gray-42: #424242;
+    --color-gray-20: #202020;
+    --color-white-0.9: rgba(255, 255, 255, 0.9);
+    --font-custom: gothic;
+}
