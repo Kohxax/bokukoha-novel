@@ -7,7 +7,7 @@
       <ul>
         <li v-for="post in posts" :key="post.path" class="mb-4">
           <div class="px-3 py-3 bg-gray-42 shadow-lg rounded-2xl min-h-41 flex flex-col justify-between">
-            <NuxtLink :to="post.path" class="text-2xl font-bold">{{ post.title }}</NuxtLink>
+            <NuxtLink :to="post.path" class="text-2xl font-bold hover:opacity-80">{{ post.title }}</NuxtLink>
             <p class="pt-2 px-2 font-thin line-clamp-3">{{ post.description }}</p>
             <div class="flex items-center justify-left mt-2 ml-2">
               <CalendarIcon class="h-5 w-5 text-gray-50 inline-block" />

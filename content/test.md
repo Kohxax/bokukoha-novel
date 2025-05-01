@@ -16,3 +16,7 @@ System.out.println("aaa");
 
 **太字**
 
+### ここから雑記
+
+勉強がてら、Nuxt + Nuxt Content + Tailwind CSSでmarkdownからページ生成する雑記置き場を自作してみました。そのうちブログの方にも書きます
+
