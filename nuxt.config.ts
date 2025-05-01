@@ -20,4 +20,12 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'cloudflare-pages'
   },
+  app: {
+    head: {
+      title: 'こはノート',
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ]
+    }
+  }   
 })
