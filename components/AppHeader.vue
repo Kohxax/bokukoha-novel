@@ -5,7 +5,6 @@
                 <BookOpenIcon class="h-6 w-6 text-white-0.9 hover:opacity-70" />
             </NuxtLink>
             <NuxtLink to="/about" class="text-white-0.9 hover:opacity-70">About</NuxtLink>
-            <NuxtLink to="/tag" class="text-white-0.9 hover:opacity-70">Tag</NuxtLink>
         </div>
     </header>
 </template>
